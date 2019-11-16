@@ -46,7 +46,6 @@ function calculateRate(mailType, weight) {
       } else if (weight >= 3) {
         result = 1
       }
-      result = parseInt(numberA) + parseInt(numberB)
       break
     case 'LM':
       // Letters Metered

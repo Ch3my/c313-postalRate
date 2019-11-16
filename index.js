@@ -1,3 +1,4 @@
+const PORT = process.env.PORT || 5000
 const path = require('path')
 const express = require("express");
 const bodyParser = require('body-parser');
@@ -20,8 +21,8 @@ app.post('/math_service', function (req, res) {
   res.json(result)
 })
 
-app.listen(3000, () => {
-  console.log("El servidor está inicializado en el puerto 3000");
+app.listen(PORT, () => {
+  console.log("Listening on ${ PORT }");
 });
 
 function doMath(numberA, numberB, sign){
